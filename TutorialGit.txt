@@ -1,0 +1,55 @@
+<pre>(base) <font color="#26A269"><b>juanpalms@juanpalms-HP-Laptop-17-by4xxx</b></font>:<font color="#12488B"><b>~/Desktop/DemoRepo</b></font>$ git init
+<font color="#A2734C">hint: Using &apos;master&apos; as the name for the initial branch. This default branch name</font>
+<font color="#A2734C">hint: is subject to change. To configure the initial branch name to use in all</font>
+<font color="#A2734C">hint: of your new repositories, which will suppress this warning, call:</font>
+<font color="#A2734C">hint: </font>
+<font color="#A2734C">hint: </font>	<font color="#A2734C">git config --global init.defaultBranch &lt;name&gt;</font>
+<font color="#A2734C">hint: </font>
+<font color="#A2734C">hint: Names commonly chosen instead of &apos;master&apos; are &apos;main&apos;, &apos;trunk&apos; and</font>
+<font color="#A2734C">hint: &apos;development&apos;. The just-created branch can be renamed via this command:</font>
+<font color="#A2734C">hint: </font>
+<font color="#A2734C">hint: </font>	<font color="#A2734C">git branch -m &lt;name&gt;</font>
+Initialized empty Git repository in /home/juanpalms/Desktop/DemoRepo/.git/
+(base) <font color="#26A269"><b>juanpalms@juanpalms-HP-Laptop-17-by4xxx</b></font>:<font color="#12488B"><b>~/Desktop/DemoRepo</b></font>$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	<font color="#C01C28">hello.txt</font>
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+(base) <font color="#26A269"><b>juanpalms@juanpalms-HP-Laptop-17-by4xxx</b></font>:<font color="#12488B"><b>~/Desktop/DemoRepo</b></font>$ git add .
+(base) <font color="#26A269"><b>juanpalms@juanpalms-HP-Laptop-17-by4xxx</b></font>:<font color="#12488B"><b>~/Desktop/DemoRepo</b></font>$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+	<font color="#26A269">new file:   hello.txt</font>
+
+(base) <font color="#26A269"><b>juanpalms@juanpalms-HP-Laptop-17-by4xxx</b></font>:<font color="#12488B"><b>~/Desktop/DemoRepo</b></font>$ git commit -m &quot;first commit&quot;
+[master (root-commit) f8b27fd] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+(base) <font color="#26A269"><b>juanpalms@juanpalms-HP-Laptop-17-by4xxx</b></font>:<font color="#12488B"><b>~/Desktop/DemoRepo</b></font>$ git config user.email
+palmerosjuanfrancisco@gmail.com
+(base) <font color="#26A269"><b>juanpalms@juanpalms-HP-Laptop-17-by4xxx</b></font>:<font color="#12488B"><b>~/Desktop/DemoRepo</b></font>$ git config user.name
+JuanPalms
+(base) <font color="#26A269"><b>juanpalms@juanpalms-HP-Laptop-17-by4xxx</b></font>:<font color="#12488B"><b>~/Desktop/DemoRepo</b></font>$ ssh -T git@github.com
+Hi JuanPalms! You&apos;ve successfully authenticated, but GitHub does not provide shell access.
+(base) <font color="#26A269"><b>juanpalms@juanpalms-HP-Laptop-17-by4xxx</b></font>:<font color="#12488B"><b>~/Desktop/DemoRepo</b></font>$ git remote set-url origin git@github.com:JuanPalms/DemoRepo.git
+error: No such remote &apos;origin&apos;
+(base) <font color="#26A269"><b>juanpalms@juanpalms-HP-Laptop-17-by4xxx</b></font>:<font color="#12488B"><b>~/Desktop/DemoRepo</b></font>$ git remote add origin git@github.com:JuanPalms/DemoRepo.git
+(base) <font color="#26A269"><b>juanpalms@juanpalms-HP-Laptop-17-by4xxx</b></font>:<font color="#12488B"><b>~/Desktop/DemoRepo</b></font>$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 258 bytes | 258.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:JuanPalms/DemoRepo.git
+ * [new branch]      master -&gt; master
+Branch &apos;master&apos; set up to track remote branch &apos;master&apos; from &apos;origin&apos;.
+(base) <font color="#26A269"><b>juanpalms@juanpalms-HP-Laptop-17-by4xxx</b></font>:<font color="#12488B"><b>~/Desktop/DemoRepo</b></font>$ 
+</pre>
